@@ -422,5 +422,60 @@ li.timeline-item::before {
   font-weight: 600;
   font-size: 23px;
 }
+.contact .mail a {
+  font-size: 28px;
+  font-family: "Open Sans";
+  color: #38a2b7;
+}
+.contact .mail a:hover {
+  text-decoration: none;
+  color: white;
+}
+.contact .reseau i {
+  font-size: 35px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 30px;
+  color: white;
+  margin: 30px;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+}
+.contact .reseau i:hover {
+  color: black;
+  background: white;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+.contact .reseau a:hover {
+  text-decoration: none;
+}
+.contact .chevron_up i {
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  color: white;
+  margin: 30px;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+}
+.contact .chevron_up i:hover {
+  color: black;
+  background: white;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+.contact .chevron_up a:hover {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */

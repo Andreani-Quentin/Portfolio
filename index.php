@@ -33,19 +33,19 @@
 								<a class="nav-link" href="">Accueil</a>
 							</li>
 							<li class="nav-item mr-2">
-								<a class="nav-link" href="">À Propos</a>
+								<a class="nav-link" href="#startchange">À Propos</a>
 							</li>
 							<li class="nav-item mr-2">
-								<a class="nav-link" href="">Compétences</a>
+								<a class="nav-link" href="#competences">Compétences</a>
 							</li>
 							<li class="nav-item mr-2">
-								<a class="nav-link" href="">Portfolio</a>
+								<a class="nav-link" href="#portfolio">Portfolio</a>
 							</li>
 							<li class="nav-item mr-2">
-								<a class="nav-link" href="">Parcour</a>
+								<a class="nav-link" href="#parcours">Parcour</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="">Contact</a>
+								<a class="nav-link" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -188,7 +188,7 @@
 
 		<!--======================================== COMPÉTENCES ========================================-->
 
-		<section class="competences py-5 my-5">
+		<section class="competences py-5 my-5" id="competences">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3"></div>
@@ -390,7 +390,7 @@
 
 				<!--======================================== PARCOURS ========================================-->
 
-		<section class="competences py-5 my-5">
+		<section class="competences py-5 my-5" id="parcours">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3"></div>
@@ -443,8 +443,8 @@
 		</section>
 						<!--======================================== CONTACT / FOOTER ========================================-->
 
-		<footer class="contact py-5 mt-5">
-			<div class="container">
+		<footer class="contact py-5 mt-5" id="contact">
+			<div class="container mt-5">
 				<div class="row">
 					<div class="col-md-3"></div>
 					<div class="col-md-6 text-center">
@@ -465,8 +465,26 @@
 						<span class="poste">Développeur Full-Stack . Développeur Front-End . Développeur Back-End . Intégrateur Web</span></p>
 					</div>
 				</div>
-				<div class="row">
-					<a href="mailto:q.andreani@gmail.com">q.andreani@gmail.com</a>
+				<div class="row mt-5">
+					<div class="col-md-12 text-center mail">
+						<a href="mailto:q.andreani@gmail.com">q.andreani@gmail.com</a>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="col-md-12 text-center reseau">
+						<a href="https://www.linkedin.com/in/quentin-andreani-5b94711b4/"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://github.com/Andreani-Quentin"><i class="fab fa-github"></i></a>
+					</div>
+				</div>
+				<div class="row chevron_up">
+					<div class="col-md-12 text-center">
+						<a href="#"><i class="fas fa-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="row mt-5 mb-0">
+					<div class="col-md-12 mb-0 text-center">
+						<p>© Andreani Quentin. Tous droits réservés. Mentions légales</p>
+					</div>
 				</div>
 			</div>
 		</footer>
