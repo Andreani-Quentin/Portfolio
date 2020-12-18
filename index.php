@@ -388,6 +388,89 @@
 			</div>
 		</section>
 
+				<!--======================================== PARCOURS ========================================-->
+
+		<section class="competences py-5 my-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 text-center">
+						<h2 class="pb-4 mb-4">Parcours</h2>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center">
+						<h3 class=" pb-5">Voici mon parcours</h3>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7 mx-auto">
+
+						<!-- Timeline -->
+						<ul class="timeline">
+							<li class="timeline-item rounded ml-3 p-4 shadow">
+								<div class="timeline-arrow"></div>
+								<h3 class="h5 mb-0">Title of section 1</h3><span class="small date"><i class="fa fa-clock-o mr-1"></i>21 March, 2019</span>
+								<p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+							</li>
+							<li class="timeline-item rounded ml-3 p-4 shadow">
+								<div class="timeline-arrow"></div>
+								<h3 class="h5 mb-0">Title of section 2</h3><span class="small date"><i class="fa fa-clock-o mr-1"></i>5 April, 2019</span>
+								<p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
+								<p class="text-small mt-2 font-weight-light">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam! Deleniti.</p>
+							</li>
+							<li class="timeline-item rounded ml-3 p-4 shadow">
+								<div class="timeline-arrow"></div>
+								<h3 class="h5 mb-0">Title of section 3</h3><span class="small date"><i class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
+								<p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+							</li>
+							<li class="timeline-item rounded ml-3 p-4 shadow">
+								<div class="timeline-arrow"></div>
+								<h3 class="h5 mb-0">Title of section 4</h3><span class="small date"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+								<p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+								<p class="text-small mt-2 font-weight-light">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
+							</li>
+						</ul><!-- End -->
+
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
+						<!--======================================== CONTACT / FOOTER ========================================-->
+
+		<footer class="contact py-5 mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 text-center">
+						<h2 class="pb-4 mb-4">Contact</h2>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center">
+						<h3 class=" pb-5">N'hésitez pas à me contacter !</h3>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center recherche">
+						<p>Actuellement à la recherche d'un stage, je suis intéressée par les postes de : <br><br>
+						<span class="poste">Développeur Full-Stack . Développeur Front-End . Développeur Back-End . Intégrateur Web</span></p>
+					</div>
+				</div>
+				<div class="row">
+					<a href="mailto:q.andreani@gmail.com">q.andreani@gmail.com</a>
+				</div>
+			</div>
+		</footer>
+
 		<!--============================= SCRYPT =============================-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
