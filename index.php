@@ -93,7 +93,7 @@
 					<div class="col-md-2"></div>
 				</div>
 				<div class="row mb-5">
-					<div class="col-md-6 mb-5">
+					<div class="col-md-6 mb-5 presentation_text">
 					<p></p>
 					<p>Bien décidé à engager une reconversion professionnelle, je cherche à me professionnaliser et apporter mes compétences tout en poursuivant ma formation de développeur web. Je suis quelqu’un de créatif, fiable et passionné.
 					Je suis quelqu’un à l’écoute des autres, très empathique. J’aime les débats mais je n’aime pas les conflits. Depuis très jeune j’aime créer : à partir de rien et arriver à un résultat satisfaisant.
@@ -119,7 +119,7 @@
 				<div class="row">
 					<div class="col-md-4"></div>
 					<div class="col-md-4 text-center bouton_portfolio">
-						<a href="#" class="realisation"><p>Voir mes réalisations</p></a>
+						<a href="#portfolio" class="realisation"><p>Voir mes réalisations</p></a>
 					</div>
 					<div class="col-md-4"></div>
 				</div>
@@ -145,30 +145,16 @@
 					<div class="col-md-2"></div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 d-flex justify-content-around">
+					<div class="col-md-12 text-center d-flex justify-content-between flex-wrap">	
 						<i class="fab fa-html5"></i>
 						<i class="fab fa-css3-alt"></i>
-					</div>
-					<div class="col-md-6 d-flex justify-content-around">	
 						<i class="fab fa-sass"></i>
 						<i class="fab fa-bootstrap"></i>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-6 d-flex justify-content-around">	
 						<i class="fab fa-php"></i>
 						<i class="fas fa-database"></i>
-					</div>
-					<div class="col-md-6 d-flex justify-content-around">	
 						<i class="fab fa-symfony"></i>
 						<i class="fab fa-js"></i>
-					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-12 d-flex justify-content-around">
 						<i class="fab fa-wordpress"></i>
-						<img src="styles/images/jquery-icon.png"/>
-						<img src="styles/images/sublime-icon.png"/>
 					</div>
 				</div>
 			</div>
@@ -177,7 +163,7 @@
 		<!--======================================== CITATIONS ========================================-->
 
 		<section class="citations">
-			<div id="myCarousel" class="carousel slide carousel-slide text-center d-flex flex-column justify-content-center" data-ride="carousel">
+			<div id="myCarousel" class="container carousel slide carousel-slide text-center d-flex flex-column justify-content-center" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -218,6 +204,7 @@
 					</div>
 					<div class="col-md-2"></div>
 				</div>
+
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<img src="styles/images/bureau.png"/>
@@ -226,7 +213,7 @@
 				<div class="row d-flex justify-content-around py-5">
 					<div class="col-md-4">
 						<div class="compet_box d-flex">
-							<i class="fas fa-code mb-4"></i>
+							<i class="fas fa-code mr-3"></i>
 							<div class="compet_content">
 								<p><span class="compet_titre">Front-End</span></p>
 								<p>Création est intégration de sites web et applications mobiles responsive, accessibles et répondant auz normes W3C</p>
@@ -235,7 +222,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="compet_box d-flex">
-							<i class="fas fa-database"></i>
+							<i class="fas fa-database mr-3"></i>
 							<div class="compet_content">
 								<p><span class="compet_titre">Back-End</span></p>
 								<p>Développement de sites web et applications, création et gestion de bases de données, programmation orientée objet et modèle 3 tiers, mise en ligne.</p>
@@ -244,7 +231,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="compet_box d-flex">
-							<i class="fas fa-laptop"></i>
+							<i class="fas fa-laptop mr-3"></i>
 							<div class="compet_content">
 								<p><span class="compet_titre">WebDesign</span></p>
 								<p>Création de maquette XD et HTML, ainsi que de prototypes fonctionnels. Conception centrée utilisateurs selon les règles d'UX lors de la création d'une interface utilisateur.</p>
@@ -255,11 +242,156 @@
 			</div>	
 		</section>
 
+		<!--======================================== PORTFOLIO ========================================-->
+
+		<section class="portfolio py-5 my-5" id="portfolio">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6 text-center">
+						<h2 class="pb-4 mb-4">Portfolio</h2>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 text-center">
+						<h3 class="pb-5">Voici quelques unes de mes réalisations</h3>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6 mt-5">
+						<div class="portfolio_box">
+							<div class="overlay p-4">
+								<div class="titre_overlay text-center">
+									<a href=""><h2 class="pb-3 mb-4">Jeux de dès</h2></a>
+								</div>
+								<div class="overlay_icone text-center">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-php"></i>
+								</div>
+								<div class="overlay_content mt-4">
+									<ul>
+										<li>
+											Création d'un Wireframe
+										</li>
+										<li>
+											Création d'une Maquette HTML
+										</li>
+										<li>
+											Mise en place d'un MCD/MLD
+										</li>
+										<li>
+											Intégration de la maquette HTML et CSS
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mt-5">
+						<div class="portfolio_box">
+							<div class="overlay p-4">
+								<div class="titre_overlay text-center">
+									<a href=""><h2 class="pb-3 mb-4">Jeux de dès</h2></a>
+								</div>
+								<div class="overlay_icone text-center">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-php"></i>
+								</div>
+								<div class="overlay_content mt-4">
+									<ul>
+										<li>
+											Création d'un Wireframe
+										</li>
+										<li>
+											Création d'une Maquette HTML
+										</li>
+										<li>
+											Mise en place d'un MCD/MLD
+										</li>
+										<li>
+											Intégration de la maquette HTML et CSS
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-6 mt-5">
+						<div class="portfolio_box">
+							<div class="overlay p-4">
+								<div class="titre_overlay text-center">
+									<a href=""><h2 class="pb-3 mb-4">Jeux de dès</h2></a>
+								</div>
+								<div class="overlay_icone text-center">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-php"></i>
+								</div>
+								<div class="overlay_content mt-4">
+									<ul>
+										<li>
+											Création d'un Wireframe
+										</li>
+										<li>
+											Création d'une Maquette HTML
+										</li>
+										<li>
+											Mise en place d'un MCD/MLD
+										</li>
+										<li>
+											Intégration de la maquette HTML et CSS
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 mt-5">
+						<div class="portfolio_box">
+							<div class="overlay p-4">
+								<div class="titre_overlay text-center">
+									<a href=""><h2 class="pb-3 mb-4">Jeux de dès</h2></a>
+								</div>
+								<div class="overlay_icone text-center">
+									<i class="fab fa-html5"></i>
+									<i class="fab fa-css3-alt"></i>
+									<i class="fab fa-php"></i>
+								</div>
+								<div class="overlay_content mt-4">
+									<ul>
+										<li>
+											Création d'un Wireframe
+										</li>
+										<li>
+											Création d'une Maquette HTML
+										</li>
+										<li>
+											Mise en place d'un MCD/MLD
+										</li>
+										<li>
+											Intégration de la maquette HTML et CSS
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 		<!--============================= SCRYPT =============================-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="app.js"></script>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</body>

@@ -194,6 +194,12 @@ header .icon-scroll:before {
   color: #38a2b7;
   font-size: 70px;
 }
+@media screen and (max-width: 768px) {
+  .presentation .presentation_text {
+    text-align: center;
+    margin-top: -40px;
+  }
+}
 .presentation .end p {
   color: white;
   font-family: "Raleway", sans-serif;
@@ -239,7 +245,7 @@ header .icon-scroll:before {
 }
 
 .technologies i {
-  font-size: 100px;
+  font-size: 70px;
   color: #38a2b7;
 }
 .technologies .sublime img {
@@ -258,19 +264,95 @@ header .icon-scroll:before {
 }
 .citations .phrase {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-style: regular;
-  font-size: 18px;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 25px;
 }
 .citations .auteur {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: regular;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .competences img {
   height: 450px;
+}
+@media screen and (max-width: 1200px) {
+  .competences img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .competences img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .competences img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .competences img {
+    height: 150px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .competences img {
+    height: 100px;
+  }
+}
+.competences .compet_box i {
+  font-size: 24px;
+  color: #38a2b7;
+}
+.competences .compet_box .compet_titre {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-weight: 700;
+}
+
+.portfolio {
+  background: #12161a;
+}
+
+.portfolio_box {
+  background: url(images/dice.jpg);
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio_box .overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  width: 100%;
+  min-height: 40px;
+  position: absolute;
+  bottom: -75%;
+  height: 350px;
+}
+.portfolio_box .overlay .titre_overlay h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 25px;
+  color: white;
+}
+.portfolio_box .overlay .titre_overlay a:hover {
+  text-decoration: none;
+}
+.portfolio_box .overlay .overlay_icone i {
+  font-size: 40px;
+  color: #38a2b7;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.portfolio_box .overlay ul {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
