@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Competences{% endblock %}
+
+{% block body %}
+
+    <section class="container">
+	    <h1 class="my-5">Nouvelle Compétence</h1>
+	    <a class="btn btn-info mb-5"href="{{ path('home') }}">Retour</a>
+	    {{ include('competences/_form.html.twig') }}
+	    <div class="text-right mt-3">
+	    	<a class="btn btn-primary mb-3"href="{{ path('competences_index') }}">Back to list</a>
+	    </div>
+    </section>
+{% endblock %}

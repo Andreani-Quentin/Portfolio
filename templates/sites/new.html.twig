@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Sites{% endblock %}
+
+{% block body %}
+    <section class="container">
+	    <h1 class="my-5">Ajouter un nouveau site au Portfolio</h1>
+	    <a class="btn btn-info mb-5"href="{{ path('home') }}">Retour</a>
+	    {{ include('sites/_form.html.twig') }}
+	    <div class="text-right mt-3">
+	    	<a class="btn btn-primary mb-3"href="{{ path('sites_index') }}">Back to list</a>
+	    </div>
+    </section>
+{% endblock %}

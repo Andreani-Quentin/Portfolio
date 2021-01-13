@@ -1,0 +1,400 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<!--======================================== NAVBAR ========================================-->
+
+	<header class="accueil" id="accueil">
+		<nav class="navbar navbar-expand-md navbar-dark justify-content-center fixed-top">
+			<div class="container">
+				<a href="index.php" class="navbar-brand d-flex w-50 mr-auto"><span class="andreani">Andreani</span> Quentin</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="effet_lien navbar-collapse collapse w-100" id="collapsingNavbar3">
+					<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+						<li class="nav-item mr-2">
+							<a class="nav-link" href="#accueil">Accueil</a>
+						</li>
+						<li class="nav-item mr-2">
+							<a class="nav-link" href="#startchange">À Propos</a>
+						</li>
+						<li class="nav-item mr-2">
+							<a class="nav-link" href="#competences">Compétences</a>
+						</li>
+						<li class="nav-item mr-2">
+							<a class="nav-link" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item mr-2">
+							<a class="nav-link" href="#parcours">Parcours</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+						{% if app.user %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ path('app_logout') }}">Déconnexion</a>
+						</li>
+						{% endif %}
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<!--======================================== TITRE ========================================-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10 text-center titre d-flex flex-column justify-content-center">
+					<p>JE SUIS</p>
+					<h1 class="mb-1"><span class="web">Web</span> Développeur</h1>
+					<span class="junior">Junior</span>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-5"></div>
+				<div class="col-md-2">
+					<a href="#startchange"><div class='icon-scroll'></div></a>
+				</div>
+				<div class="col-md-5"></div>
+			</div>
+		</div>
+	</header>
+
+	<!--======================================== PRÉSENTATION ========================================-->
+
+	<section class="presentation pt-5" id="startchange">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h2 class="pb-4 mb-4">Présentation</h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h3 class="mb-5 pb-5">Étudiant en développement web et web mobile</h3>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-6 mb-5 presentation_text">
+					<p></p>
+					<p>Bien décidé à engager une reconversion professionnelle, je cherche à me professionnaliser et apporter mes compétences tout en poursuivant ma formation de développeur web. Je suis quelqu’un de créatif, fiable et passionné.
+						Je suis quelqu’un à l’écoute des autres, très empathique. J’aime les débats mais je n’aime pas les conflits. Depuis très jeune j’aime créer : à partir de rien et arriver à un résultat satisfaisant.
+						<br><br>
+						Dans cette optique et sur mes créations personnelles, j’ai un coté très perfectionniste me donnant souvent mal à penser une création réellement finie. Grâce à mes expériences professionnelles passées, j’ai gagné en rigueur et en discipline. J’ai appris à respecter des délais aussi courts qu’ils soient en optimisant mes actions et gérant le stress pouvant en découler.
+						Je suis quelqu'un de polyvalent et je sais m'adapter aux différentes situations qui s'offrent à moi.</p>
+					</div>
+					<div class="col-md-6 text-center"><img class="mt-3 pt-3" src="styles/images/moi.jpeg" alt="Andreani Quentin"></div>
+				</div>
+				<div class="row end">
+					<div class="col-md-4 text-center"><i class="fas fa-code mb-4"></i><p class="mb-5">Front-End</p></div>
+					<div class="col-md-4 text-center"><i class="fas fa-database mb-4"></i><p class="mb-5">Back-End</p></div>
+					<div class="col-md-4 text-center"><i class="fas fa-mobile-alt mb-4"></i><p class="mb-5">Mobile</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--======================================== BOUTON REALISATION ========================================-->
+
+	<section class="bouton_realisation d-flex flex-column justify-content-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 text-center bouton_portfolio">
+					<a href="#portfolio" class="realisation"><p>Voir mes réalisations</p></a>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+	</section>
+
+	<!--======================================== TECHONOLOGIES ========================================-->
+
+	<section class="technologies py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h2 class="pb-4 mb-4">Technologies</h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h3 class="mb-5 pb-5">Les technologies que j'utilise</h3>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center d-flex justify-content-between flex-wrap">	
+					<i class="fab fa-html5"></i>
+					<i class="fab fa-css3-alt"></i>
+					<i class="fab fa-sass"></i>
+					<i class="fab fa-bootstrap"></i>
+					<i class="fab fa-php"></i>
+					<i class="fas fa-database"></i>
+					<i class="fab fa-symfony"></i>
+					<i class="fab fa-js"></i>
+					<i class="fab fa-wordpress"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--======================================== CITATIONS ========================================-->
+
+	<section class="citations">
+		<div id="myCarousel" class="container carousel slide carousel-slide text-center d-flex flex-column justify-content-center" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item carousel-item_accueil active" data-interval="5000">
+					<p class="phrase"><span>"Le thé n'a ni l'arrogance du vin, ni l'amertume du café et encore moins l'innoncence minaudière du cacao."</span></p>
+					<p class="auteur">- Okakura Kakuzo -</p>
+				</div>
+				<div class="carousel-item carousel-item_accueil" data-interval="5000">
+					<p class="phrase">"Quand on arrête le café, le corps est bien très thé."</p>
+					<p class="auteur">- Gaëtan Faucer -</p>
+				</div>
+				<div class="carousel-item carousel-item_accueil" data-interval="5000">
+					<p class="phrase">"Je pense que c'est le meilleur conseil : réfléchissez constamment à la façon dont vous pourriez mieux faire les choses, et vous remettre en question."</p>
+					<p class="auteur">- Elon Musk -</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="competences"></div>
+
+	<!--======================================== COMPÉTENCES ========================================-->
+
+	<section class="competences py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h2 class="pb-4 mb-4">Compétences</h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h3 class="mb-5 pb-5">Ce que je sais faire</h3>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<img src="styles/images/bureau.png"/>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-around py-5">
+
+			{% for competence in competences %}
+				<div class="col-md-4 mt-5">
+					<div class="compet_box d-flex">
+						{% autoescape 'html' %}
+						    {{ competence.icon|raw }}
+						{% endautoescape %}
+						<div class="compet_content">
+							<p><span class="compet_titre">{{ competence.title }}</span></p>
+							<p>{{ competence.content }}</p>
+							{% if app.user %}
+							<div class="modif text-right">
+								<a class="mr-4 text-info" href="{{ path('competences_show', {'id': competence.id}) }}">Voir</a>
+								<a class="mr-4 text-info" href="{{ path('competences_edit', {'id': competence.id}) }}">Editer</a>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+			</div>
+			{% if app.user %}
+			<div class="text-right">
+				<a class="btn btn-info text-body" href="{{ path('competences_new') }}">New</a>
+			</div>
+			{% endif %}	
+
+		</div>	
+	</section>
+
+	<!--======================================== PORTFOLIO ========================================-->
+
+	<section class="portfolio py-5 my-5" id="portfolio">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h2 class="pb-4 mb-4">Portfolio</h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h3 class="pb-5">Voici quelques unes de mes réalisations</h3>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="row">
+				{% for site in sites %}
+				<div class="col-md-6 mt-5">
+					<div class="portfolio_box" style="background: url({{ asset('uploads/' ~ site.img) }}); background-size: cover; background-position: center;">
+						<div class="overlay p-4">
+							<div class="titre_overlay text-center">
+								<a href="{{ site.link }}"><h2 class="pb-3 mb-4">{{ site.title }}</h2></a>
+							</div>
+							<div class="overlay_icone text-center">
+								{% autoescape 'html' %}
+						    	{{ site.tech|raw }}
+								{% endautoescape %}
+							</div>
+							<div class="overlay_content mt-4">
+								{% autoescape 'html' %}
+						    	{{ site.content|raw }}
+								{% endautoescape %}								
+							</div>
+						</div>
+					</div>
+					{% if app.user %}
+					<div class="text-right mt-2">
+						<a class="mr-3 text-info" href="{{ path('sites_show', {'id': site.id}) }}">Voir</a>
+						<a class="mr-3 text-info" href="{{ path('sites_edit', {'id': site.id}) }}">Editer</a>
+					</div>
+					{% endif %}
+				</div>
+				{% endfor %}
+			</div>
+			{% if app.user %}
+			<div class="text-right mt-5">
+				<a class="btn btn-info text-body" href="{{ path('sites_new') }}">New</a>
+			</div>
+			{% endif %}
+		</div>
+		<div id="parcours"></div>
+	</section>
+
+	<!--======================================== PARCOURS ========================================-->
+
+	<section class="competences py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h2 class="pb-4 mb-4">Parcours</h2>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 text-center">
+					<h3 class=" pb-5">Voici mon parcours</h3>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-7 mx-auto">
+
+					<!-- Timeline -->
+					<ul class="timeline">
+
+						{% for timeline in timeline|reverse %}
+						<li class="timeline-item rounded ml-3 p-4 shadow">
+							<div class="timeline-arrow"></div>
+							<h3 class="h5 mb-0">{{ timeline.title }}</h3><span class="small date"><i class="fa fa-clock-o mr-1"></i>{{ timeline.dates }}</span>
+							<p class="text-small mt-2 font-weight-light">{% autoescape 'html' %}{{ timeline.content|raw }}{% endautoescape %}</p>
+						</li>
+						{% if app.user %}
+							<div class="text-right mt-2">
+								<a class="mr-3 text-info" href="{{ path('timeline_show', {'id': timeline.id}) }}">Voir</a>
+								<a class="mr-3 text-info" href="{{ path('timeline_edit', {'id': timeline.id}) }}">Editer</a>
+							</div>
+						{% endif %}
+						{% endfor %}
+
+					</ul>
+					<!-- End -->
+					{% if app.user %}
+					<div class="text-right mt-5">
+						<a class="btn btn-info text-body" href="{{ path('timeline_new') }}">New</a>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--======================================== CONTACT / FOOTER ========================================-->
+
+<footer class="contact py-5 mt-5" id="contact">
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 text-center">
+				<h2 class="pb-4 mb-4">Contact</h2>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 text-center">
+				<h3 class=" pb-5">N'hésitez pas à me contacter !</h3>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center recherche">
+				<p>Actuellement à la recherche d'un stage, je suis intéressée par les postes de : <br><br>
+					<span class="poste">Développeur Full-Stack . Développeur Front-End . Développeur Back-End . Intégrateur Web</span></p>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-12 text-center">
+					<a class="btn btn-dark" href="/documents/Andreani Quentin - CV 2021.pdf/">MON CV</a>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-12 text-center mail">
+					<a href="mailto:q.andreani@gmail.com">q.andreani@gmail.com</a>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-12 text-center reseau">
+					<a href="https://www.linkedin.com/in/quentin-andreani-5b94711b4/"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/Andreani-Quentin"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<div class="row chevron_up">
+				<div class="col-md-12 text-center">
+					<a href="#accueil"><i class="fas fa-chevron-up"></i></a>
+				</div>
+			</div>
+			<div class="row mt-5 mb-0">
+				<div class="col-md-12 mb-0 text-center">
+					<p>© Andreani Quentin, Tous droits réservés.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--============================= SCRYPT =============================-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+{% endblock %}
